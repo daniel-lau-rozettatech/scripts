@@ -1,1 +1,0 @@
-curl -s https://login.windows.net/__AZURE_APP__.onmicrosoft.com/oauth2/token -XPOST --data 'grant_type=password&username=__EMAIL___&password=__PASSWORD__&client_id=__CLIENT_ID__&resource=https://graph.windows.net&client_secret=__CLIENT_SECRET__' | python -mjson.tool | grep access_token | cut -d: -f2 | sed 's/^ *"//' | sed 's/".*$//' > $HOME/.azure_key

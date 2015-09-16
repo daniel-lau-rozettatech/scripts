@@ -1,0 +1,7 @@
+:
+if [ $# -lt 1 ]
+then
+  echo "$0 <string to search>"
+  exit 1
+fi
+find . -name .tox -prune -o -name \*.py -exec grep -H $1 {} \;

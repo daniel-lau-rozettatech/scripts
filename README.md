@@ -1,2 +1,2 @@
 # scripts
-Handy scripts
+Handy scripts for all
